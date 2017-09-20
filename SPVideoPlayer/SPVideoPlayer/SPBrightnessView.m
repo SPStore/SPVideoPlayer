@@ -2,7 +2,7 @@
 //  SPBrightnessView.m
 //  SPBrightnessView
 //
-//  Created by leshengping on 17/7/12.
+//  Created by leshengping on 17/7/12.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //
 

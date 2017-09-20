@@ -2,7 +2,7 @@
 //  SPVideoPopView.m
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/8/28.
+//  Created by leshengping on 17/8/28.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //
 

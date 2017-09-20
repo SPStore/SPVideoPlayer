@@ -2,7 +2,7 @@
 //  SPLoadingHUD.h
 //  SPHUD
 //
-//  Created by leshengping on 17/8/8.
+//  Created by leshengping on 17/8/8. （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //  一个简单的加载指示器,支持iOS8或iOS8以上版本, 实现原理参考了MBProgressHUD框架
 

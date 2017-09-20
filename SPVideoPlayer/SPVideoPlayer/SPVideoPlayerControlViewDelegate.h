@@ -1,7 +1,7 @@
 //
 //  SPPlayerControlViewDelegate.h
 //
-// Copyright (c) 2017年 leshengping
+// Copyright (c) 2017年 leshengping  （https://github.com/SPStore/SPVideoPlayer
 //
 
 #ifndef SPPlayerControlViewDelegate_h

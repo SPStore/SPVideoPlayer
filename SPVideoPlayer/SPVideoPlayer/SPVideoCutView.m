@@ -2,7 +2,7 @@
 //  SPVideoCutView.m
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/8/2.
+//  Created by leshengping on 17/8/2.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //
 

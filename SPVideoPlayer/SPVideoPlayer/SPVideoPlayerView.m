@@ -2,7 +2,7 @@
 //  SPVideoPlayerView.m
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/7/12.
+//  Created by leshengping on 17/7/12.  （https://github.com/SPStore/SPVideoPlayer）
 //  Copyright © 2017年 leshengping. All rights reserved.
 //
 
@@ -253,7 +253,7 @@ typedef NS_ENUM(NSInteger, PanDirection){
 /**
  *  自动播放，默认不自动播放
  */
-- (void)autoPlayTheVideo {
+- (void)startPlay {
     // 设置Player相关参数
     [self configSPPlayer];
 }
@@ -373,7 +373,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
     __weak typeof(self) weakSelf = self;
 
     [self.urlAsset loadValuesAsynchronouslyForKeys:@[tracksKey] completionHandler:^{
-        NSLog(@"来了");
         // 主线程
         dispatch_async(dispatch_get_main_queue(), ^{
             // 因为这是异步操作，有可能执行到这儿的时候程序已经退出,必须要确保当前播放进程没有退出
@@ -435,7 +434,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
 
 // 超时
 - (void)timeOut {
-    NSLog(@"-------timeOut");
 
     if (!self.canPlay) { // 30秒后来到这里，如果还是没开始播放则报网络异常
         [self.urlAsset cancelLoading];
@@ -595,8 +593,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
     __weak typeof(self) weakSelf = self;
     // 每1秒执行一次
     self.timeObserve = [self.player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time){
-        
-        //NSLog(@"*************************** 开始真正的播放");
         
         AVPlayerItem *currentItem = weakSelf.playerItem;
         NSArray *loadedRanges = currentItem.seekableTimeRanges;
@@ -1084,7 +1080,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
         } else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
             // 当缓冲好的时候
             if (self.playerItem.playbackLikelyToKeepUp && self.playState == SPVideoPlayerPlayStateBuffering){
-                NSLog(@"缓冲成功");
                 [[SPNetworkReachabilityManager sharedManager] stopMonitoring];
                 [self updatePlayState:SPVideoPlayerPlayStateBufferSuccessed];
             }
@@ -1113,7 +1108,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
                 _isPauseByUser = NO;
                     [[SPNetworkReachabilityManager sharedManager] stopMonitoring];
                 if (!self.seekTime) { // 有值说明是续播，此时虽然rate=1,但是马上会seekToTime，seekToTime前会有一个准备播放的阶段
-                    NSLog(@"正在播放");
                     [self updatePlayState:SPVideoPlayerPlayStatePlaying];
                 }
             }
@@ -1953,8 +1947,8 @@ typedef NS_ENUM(NSInteger, PanDirection){
     self.videoURL = videoURL;
     // 从xx秒播放
     self.seekTime = currentTime;
-    // 切换完分辨率自动播放
-    [self autoPlayTheVideo];
+    // 切换完分辨率开始播放
+    [self startPlay];
 
 }
 

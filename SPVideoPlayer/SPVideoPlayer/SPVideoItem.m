@@ -2,7 +2,7 @@
 //  SPVideoItem.m
 //  SPVideoPlayer
 //
-//  Created by Libo on 17/9/1.
+//  Created by Libo on 17/9/1. （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 iDress. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  SPVideoPlayerView.h
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/7/12.
+//  Created by leshengping on 17/7/12. （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //  播放层
 
@@ -137,9 +137,9 @@ typedef NS_ENUM(NSInteger,SPVideoPlayerLoadStatus) {
 - (void)configureControlView:(UIView *)controlView videoItems:(NSArray<SPVideoItem *> *)videoItems;
 
 /**
- *  自动播放，默认不自动播放，调此方法才会开始播放
+ *  调此方法才会开始播放
  */
-- (void)autoPlayTheVideo;
+- (void)startPlay;
 
 /**
  *  重置player

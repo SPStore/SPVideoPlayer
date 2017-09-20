@@ -2,7 +2,7 @@
 //  SPVideoPlayerControlView.h
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/7/12.
+//  Created by leshengping on 17/7/12.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //  控件层，装载播放\暂停按钮，进度条,返回按钮等
 

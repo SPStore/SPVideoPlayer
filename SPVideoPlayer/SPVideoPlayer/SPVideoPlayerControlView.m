@@ -1,7 +1,7 @@
 //
 //  SPPlayerControlView.m
 //
-//  Created by leshengping on 17/7/12.
+//  Created by leshengping on 17/7/12.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //
 
@@ -152,7 +152,6 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     
     switch (state) {
         case SPVideoPlayerPlayStateReadyToPlay:    // 准备播放
-            NSLog(@"即将播放");
             self.placeholderView.alpha = 1;
             if (seekTime && minutesElapsed >= 1) {
                 [self.placeholderView setPromptLabelTitle:[NSString stringWithFormat:@"上次观看至%.0f分钟,正在续播",minutesElapsed]];

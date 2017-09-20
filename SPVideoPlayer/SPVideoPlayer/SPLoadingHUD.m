@@ -2,7 +2,7 @@
 //  SPLoadingHUD.m
 //  SPHUD
 //
-//  Created by leshengping on 17/8/8.
+//  Created by leshengping on 17/8/8.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //  一个简单的加载指示器
 

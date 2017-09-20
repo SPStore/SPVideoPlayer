@@ -2,7 +2,7 @@
 //  SPVideoPopView.h
 //  SPVideoPlayer
 //
-//  Created by leshengping on 17/8/28.
+//  Created by leshengping on 17/8/28.  （https://github.com/SPStore/SPVideoPlayer
 //  Copyright © 2017年 leshengping. All rights reserved.
 //  仅针对该视频播放器封装的一个从右边弹出来的popView，如显示分辨率列表，选集列表等
 
