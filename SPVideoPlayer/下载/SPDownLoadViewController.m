@@ -8,11 +8,9 @@
 
 #import "SPDownLoadViewController.h"
 #import "SPDownLoadingCell.h"
-#import "SPDownLoadedCell.h"
 #import "SPVideoModel.h"
 #import "SPDownload.h"
 #import "SPDownLoadModel.h"
-#import "SPTimerManager.h"
 #import "MoviePlayerViewController.h"
 
 @interface SPDownLoadViewController () <UITableViewDataSource,UITableViewDelegate>
@@ -37,9 +35,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    // 开启定时器
-    [[SPTimerManager shareManager] openTimer];
-    
     // 获取所有正在下载的数据，数组中存的是字典
     self.dicArray = [NSKeyedUnarchiver unarchiveObjectWithFile:downloadURLPath];
     
@@ -47,12 +42,6 @@
     self.downLoadingModels = [SPVideoModel modelForDictArray:self.dicArray];
     
     [self.tableView reloadData];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    // 页面将要消失的时候关闭(销毁)定制器，如果想要退出界面时继续运行定时器，就不要关闭,不关闭不会导致内存不释放，因为定时器的内部原理是GCD不是NSTimer
-    [[SPTimerManager shareManager] closeTimer];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

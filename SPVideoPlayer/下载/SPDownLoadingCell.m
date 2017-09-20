@@ -12,7 +12,6 @@
 #import "SPDownLoadModel.h"
 #import "UIImageView+WebCache.h"
 #import "SPProgressView.h"
-#import "SPTimerManager.h"
 
 @interface SPDownLoadingCell()
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
