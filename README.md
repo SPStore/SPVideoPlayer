@@ -1,2 +1,3 @@
-[中文讲解](https://github.com/SPStore/SPVideoPlayer/edit/master/README.md "悬停显示")
+[中文讲解](https://github.com/SPStore/SPVideoPlayer/edit/master/README.md)
 
+## 特性
