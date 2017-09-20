@@ -21,7 +21,7 @@
         _videoItem.title            = @"视频标题";
         _videoItem.videoURL         = [NSURL URLWithString:_videoModel.playUrl];
         _videoItem.placeholderImage = [UIImage imageNamed:@"qyplayer_aura2_background_normal_iphone_375x211_"];
-        // playerView的父视图
+        // playerView的父视图,如果是在cell上播放，则需要设置fatherViewTag而不是fatherView,fatherViewTag就是playerView父视图的tag值
         _videoItem.fatherView       = self.playerFatherView;
     }
     return _videoItem;
