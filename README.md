@@ -13,7 +13,7 @@
 12. 可自定义播放界面(即控制层，默认的控制层是SPVideoPlayerControlView)
 
 ## 如何使用
-```Object-C
+```C
 // 创建视频播放的模型
 - (SPVideoItem *)videoItem { 
     if (!_videoItem) {
