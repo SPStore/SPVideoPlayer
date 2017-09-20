@@ -51,8 +51,8 @@
     return _playerView;
 }
 注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去
+``` // C
 ```
-```
-// 开始播放，默认不开始播放
-    [self.playerView startPlay];
+// 开始播放，只有调用startPlay才会开始播放
+[self.playerView startPlay];
 ```
