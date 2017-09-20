@@ -53,5 +53,63 @@
 ```
 
 ## 如何自定义播放界面 
-此框架内部自带的播放界面是SPVideoPlayerControlView,如果你想要自带的，想自己搭建一个全新的界面，那么你搭建好之后，只需要调用- (void)configureControlView:(UIView *)controlView videoItem:(SPVideoItem *)videoItem; 其中congtrolView就传你自定义的界面
+[self.playerView configureControlView:这里传你自定义的界面 videoItem:这里传视频模型];
+你搭建完界面之后，必然会有很多控件，如播放暂停按钮，滑动条，全屏按钮，返回按钮，下载按钮等，那么这些控件触发的方法该如何实现呢，这个非常简单,你不需要去关心怎么做，这些事情全都交给代理去做，代理就是播放层SPVideoPlayerView,代理方法详见框架中的SPVideoPlayerControlViewDelegate
+例：
+```
+// 下一集按钮的触发方法
+- (void)nextButtonAction:(UIButton *)sender {
+    if ([self.delegate respondsToSelector:@selector(sp_controlViewNextButtonClicked:)]) {
+        [self.delegate sp_controlViewNextButtonClicked:sender];
+    }
+}
+```
+
+另外还有几个方法值得你关心,这些方法(见框架中的分类文件夹里头的“UIView+CustomControlView”)如下：(这些方法的具体实现可以参考框架中的SPVideoPlayerControlView.m)
+```
+/** 
+ *  实现此方法，控制层可以得到播放模型以及正在播放的视频url，正在播放的url并不一定是模型中的url，有可能是分辨率字典中的某一个
+ */
+- (void)sp_setPlayerItem:(SPVideoItem *)videoItem playingUrlString:(NSString *)playingUrlString;
+
+/**
+ *  实现此方法，单击播放器时可以显示或隐藏控制层
+ */
+- (void)sp_playerShowOrHideControlView;
+
+/** 
+ *  实现此方法，重置ControlView，如播放新的视频，播放结束等都需要重置
+ */
+- (void)sp_playerResetControlView;
+
+/**
+ *  实现此方法，可以设置快进快退时的预览视图
+ */
+- (void)sp_playerDraggedWithThumbImage:(UIImage *)thumbImage;
+
+/** 
+ *  实现此方法，可以决定是否要下载按钮
+ */
+- (void)sp_playerHasDownloadFunction:(BOOL)sender;
+
+/**
+ *  实现此方法，可以设置下载按钮的状态，如可下载状态和不可下载状态
+ */
+- (void)sp_playerDownloadBtnState:(BOOL)state;
+
+/** 
+ *  实现此方法, 可以设置锁定屏幕方向按钮的状态，如选中状态和未选中状态
+ */
+- (void)sp_playerLockBtnState:(BOOL)state;
+
+/**
+ *  实现此方法，可以设置在cell上播放时，控制层的相关设置
+ */
+- (void)sp_playerCellPlay;
+
+/**
+ *  实现此方法，可以设置小屏播放时，控制层的相关设置
+ */
+- (void)sp_playerBottomShrinkPlay;
+```
 
