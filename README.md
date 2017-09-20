@@ -45,7 +45,7 @@
     }
     return _playerView;
 }
-<font color=#0099ff size=7 face="注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去">color=#0099ff size=72 face="黑体"</font>
+<font face="微软雅黑">注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去</font>
 
 ``` 
 ```
