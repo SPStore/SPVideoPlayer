@@ -11,3 +11,19 @@
 10. 含有视频下载功能
 11. 含有网络监听
 12. 可自定义播放界面(即控制层，默认的控制层是SPVideoPlayerControlView)
+
+## 如何使用
+```
+// 创建视频播放的模型
+- (SPVideoItem *)videoItem {
+    if (!_videoItem) {
+        _videoItem                  = [[SPVideoItem alloc] init];
+        _videoItem.title            = @"视频标题";
+        _videoItem.videoURL         = [NSURL URLWithString:_videoModel.playUrl];
+        _videoItem.placeholderImage = [UIImage imageNamed:@"qyplayer_aura2_background_normal_iphone_375x211_"];
+        // playerView的父视图
+        _videoItem.fatherView       = self.playerFatherView;
+    }
+    return _videoItem;
+}
+```
