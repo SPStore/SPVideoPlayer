@@ -45,9 +45,12 @@
     }
     return _playerView;
 }
+注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去
 ``` 
-<font color=red size=72>注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去</font>
 ```
 // 开始播放，只有调用startPlay才会开始播放
 [self.playerView startPlay];
 ```
+
+## 如何自定义播放界面
+
