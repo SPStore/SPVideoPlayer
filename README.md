@@ -52,5 +52,6 @@
 [self.playerView startPlay];
 ```
 
-## 如何自定义播放界面
+## 如何自定义播放界面 
+此框架内部自带的播放界面是SPVideoPlayerControlView,如果你想要自带的，想自己搭建一个全新的界面，那么你搭建好之后，只需要调用- (void)configureControlView:(UIView *)controlView videoItem:(SPVideoItem *)videoItem; 其中congtrolView就传你自定义的界面
 
