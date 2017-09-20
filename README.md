@@ -14,7 +14,6 @@
 
 ## 如何使用
 ```
-###### 非cell上播放
 // 创建视频播放的模型
 - (SPVideoItem *)videoItem {
     if (!_videoItem) {
@@ -31,7 +30,8 @@
 // 创建播放器对象
 - (SPVideoPlayerView *)playerView {
     if (!_playerView) {
-        _playerView = [[SPVideoPlayerView alloc] init];
+        // 创建，如果是cell上播放，用sharedPlayerView单例创建
+        _playerView = [[SPVideoPlayerView alloc] init];
         
        // 这一步非常重要，这一步相当于设置了控制层和视频模型,如果控制层传nil，则默认自带的的控制层
         [_playerView configureControlView:nil videoItem:self.videoItem];
@@ -51,4 +51,5 @@
     return _playerView;
 }
 注：您无需手动添加playerView，[_playerView configureControlView:nil videoItem:self.videoItem];这一步内部会自动将playerView添加到模型中指定的fatherView上去
+
 ```
