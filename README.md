@@ -53,6 +53,7 @@
 ```
 
 ## 如何自定义播放界面 
+调用方法传入自定义控制层（方法内部会自动添加到父view上）
 ```
 [self.playerView configureControlView:这里传你自定义的界面 videoItem:这里传视频模型];
 ```
@@ -76,6 +77,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerWillJump:) name:SPVideoPlayerWillJumpNSNotification object:nil];
     // 视频播放进度条转完毕
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerDidJumped:) name:SPVideoPlayerDidJumpedNSNotification object:nil];
+    // 监听缓冲进度的改变
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlyerBufferProgressValueChanged:) name:SPVideoPlayerBufferProgressValueChangedNSNotification object:nil];
     // 监听视频截图
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cutVideoFinished:) name:SPVideoPlayerCutVideoFinishedNSNotification object:nil];
