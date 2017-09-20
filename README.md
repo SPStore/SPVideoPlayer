@@ -13,7 +13,7 @@
 12. 可自定义播放界面(即控制层，默认的控制层是SPVideoPlayerControlView)
 
 ## 如何使用
-```C
+```
 // 创建视频播放的模型
 - (SPVideoItem *)videoItem { 
     if (!_videoItem) {
@@ -34,7 +34,7 @@
         _playerView = [[SPVideoPlayerView alloc] init];
         
        // 这一步非常重要，这一步相当于设置了控制层和视频模型,如果控制层传nil，则默认自带的的控制层
-        [_playerView configureControlView:nil videoItem:self.videoItem];
+        `[_playerView configureControlView:nil videoItem:self.videoItem];`
         // 如果有多个视频需要播放，如电视剧有很多集，则用这个方法
         //[_playerView configureControlView:nil videoItems:self.videoItems];
         
