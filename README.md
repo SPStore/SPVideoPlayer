@@ -26,4 +26,27 @@
     }
     return _videoItem;
 }
+
+// 创建播放器对象
+- (SPVideoPlayerView *)playerView {
+    if (!_playerView) {
+        _playerView = [[SPVideoPlayerView alloc] init];
+        
+       // 这一步非常重要，这一步相当于设置了控制层和视频模型,如果控制层传nil，则默认自带的的控制层
+        [_playerView configureControlView:nil videoItem:self.videoItem];
+        // 如果有多个视频需要播放，如电视剧有很多集，则用这个方法
+        //[_playerView configureControlView:nil videoItems:self.videoItems];
+        
+        // 设置代理
+        _playerView.delegate = self;
+
+        // 打开下载功能（默认没有这个功能）
+        _playerView.hasDownload    = YES;
+        
+        // 打开预览图,默认是打开的
+        _playerView.requirePreviewView = YES;
+
+    }
+    return _playerView;
+}
 ```
