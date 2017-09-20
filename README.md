@@ -53,7 +53,9 @@
 ```
 
 ## 如何自定义播放界面 
+```
 [self.playerView configureControlView:这里传你自定义的界面 videoItem:这里传视频模型];
+```
 你搭建完界面之后，必然会有很多控件，如播放暂停按钮，滑动条，全屏按钮，返回按钮，下载按钮等，那么这些控件触发的方法该如何实现呢，这个非常简单,你不需要去关心怎么做，这些事情全都交给代理去做，代理就是播放层SPVideoPlayerView,代理方法详见框架中的SPVideoPlayerControlViewDelegate
 例：
 ```
@@ -64,6 +66,23 @@
     }
 }
 ```
+播放层有一些事件发生了变化，控制层也需要发生变化，如正在水平滑动屏幕进行快进快退，那控制层的滑动条就需要跟随这个进度，这里你自定义的控制层就需要监听播放层所发出的通知，如：
+```
+// 监听播放状态的改变
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerStateChanged:) name:SPVideoPlayerStateChangedNSNotification object:nil];
+    // 监听播放进度的改变
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerProgressValueChanged:) name:SPVideoPlayerProgressValueChangedNSNotification object:nil];
+    // 视频播放进度将要跳转
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerWillJump:) name:SPVideoPlayerWillJumpNSNotification object:nil];
+    // 视频播放进度条转完毕
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerDidJumped:) name:SPVideoPlayerDidJumpedNSNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlyerBufferProgressValueChanged:) name:SPVideoPlayerBufferProgressValueChangedNSNotification object:nil];
+    // 监听视频截图
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cutVideoFinished:) name:SPVideoPlayerCutVideoFinishedNSNotification object:nil];
+    // 监听媒体网络加载状态
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadStatusDidChanged:) name:SPVideoPlayerLoadStatusDidChangedNotification object:nil];
+```
+
 
 另外还有几个方法值得你关心,这些方法(见框架中的分类文件夹里头的“UIView+CustomControlView”)如下：(这些方法的具体实现可以参考框架中的SPVideoPlayerControlView.m)
 ```
