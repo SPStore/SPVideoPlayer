@@ -57,7 +57,7 @@
 ```
 [self.playerView configureControlView:这里传你自定义的界面 videoItem:这里传视频模型];
 ```
-你搭建完界面之后，必然会有很多控件，如播放暂停按钮，滑动条，全屏按钮，返回按钮，下载按钮等，那么这些控件触发的方法该如何实现呢，这个非常简单,你不需要去关心怎么做，这些事情全都交给代理去做，代理就是播放层SPVideoPlayerView,代理方法详见框架中的SPVideoPlayerControlViewDelegate  
+你搭建完界面之后，必然会有很多控件，如播放暂停按钮，滑动条，全屏按钮，返回按钮，下载按钮等，那么这些控件触发的方法该如何实现呢，这个非常简单,你不需要去关心怎么做，这些事情全都交给代理去做，代理就是播放层SPVideoPlayerView,代理方法详见框架中的SPVideoPlayerControlViewDelegate.h 
 例：
 ```
 // 下一集按钮的触发方法
@@ -67,7 +67,7 @@
     }
 }
 ```
-播放层有一些事件发生了变化，控制层也需要发生变化，如正在水平滑动屏幕进行快进快退，那控制层的滑动条就需要跟随这个进度，这里你自定义的控制层就需要监听播放层所发出的通知，如：
+播放层有一些事件发生了变化，控制层也需要发生变化，如正在水平滑动屏幕进行快进快退，那控制层的滑动条就需要跟随这个进度，这里你自定义的控制层就需要监听播放层所发出的通知，通知方法的具体实现可以参考SPVideoPlayerControlView.m：
 ```
     // 监听播放状态的改变
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayerStateChanged:) name:SPVideoPlayerStateChangedNSNotification object:nil];
