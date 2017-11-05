@@ -29,8 +29,6 @@
     return UIInterfaceOrientationPortrait;
 }
 
-
-
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleDefault; // your own style
 }

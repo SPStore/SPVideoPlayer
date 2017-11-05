@@ -10,20 +10,25 @@
 		09071F331F5A84D900F94C82 /* SPDownLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09071F321F5A84D900F94C82 /* SPDownLoadingCell.m */; };
 		09071F581F5AA61900F94C82 /* SPDownLoadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09071F571F5AA61900F94C82 /* SPDownLoadModel.m */; };
 		09071F5B1F5AA90500F94C82 /* SPVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09071F5A1F5AA90500F94C82 /* SPVideoModel.m */; };
-		090A137A1F3CA3DF00CB62E0 /* SPBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090A13791F3CA3DF00CB62E0 /* SPBrightnessView.m */; };
 		090DB7AD1F5D0B3D002B68DE /* SPProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090DB7AC1F5D0B3D002B68DE /* SPProgressView.m */; };
-		090E22D81F41A3100072022D /* SPNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E22D71F41A3100072022D /* SPNetworkReachabilityManager.m */; };
 		090F28C61F50947500E45D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090F28C51F50947500E45D43 /* LaunchScreen.storyboard */; };
-		0914213D1F3C05D800946CA7 /* SPLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914213C1F3C05D800946CA7 /* SPLoadingHUD.m */; };
-		0914EA5C1F58F29500D852B1 /* SPVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914EA5B1F58F29500D852B1 /* SPVideoItem.m */; };
 		0914EAAF1F5933B900D852B1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0914EAAE1F5933B900D852B1 /* UINavigationController+FDFullscreenPopGesture.m */; };
-		091552FE1F53B8390048E3ED /* SPVideoPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 091552FD1F53B8390048E3ED /* SPVideoPopView.m */; };
-		0915D1EC1F5544A100428592 /* UIViewController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915D1EB1F5544A100428592 /* UIViewController+SPPlayerRotation.m */; };
-		0915D1EF1F5544EA00428592 /* UINavigationController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915D1EE1F5544EA00428592 /* UINavigationController+SPPlayerRotation.m */; };
-		0915D1F21F55452400428592 /* UITabBarController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915D1F11F55452400428592 /* UITabBarController+SPPlayerRotation.m */; };
-		0915D1F51F55457300428592 /* UIAlertController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915D1F41F55457300428592 /* UIAlertController+SPPlayerRotation.m */; };
-		0915D1F61F554C0600428592 /* SPVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CBC1F16168D00E391C0 /* SPVideoPlayerView.m */; };
-		0921E5AF1F70BB4400B491B2 /* SPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0921E5AE1F70BB4400B491B2 /* SPVideoPlayer.bundle */; };
+		0919B8B31FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8951FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.m */; };
+		0919B8B41FAF1B5B002520F9 /* UIWindow+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B89A1FAF1B5B002520F9 /* UIWindow+CurrentViewController.m */; };
+		0919B8B51FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B89C1FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.m */; };
+		0919B8B61FAF1B5B002520F9 /* UIView+CustomControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B89D1FAF1B5B002520F9 /* UIView+CustomControlView.m */; };
+		0919B8B71FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B89E1FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.m */; };
+		0919B8B81FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B89F1FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.m */; };
+		0919B8B91FAF1B5B002520F9 /* SPVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A01FAF1B5B002520F9 /* SPVideoPlayerView.m */; };
+		0919B8BA1FAF1B5B002520F9 /* SPVideoPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A11FAF1B5B002520F9 /* SPVideoPopView.m */; };
+		0919B8BB1FAF1B5B002520F9 /* SPBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A31FAF1B5B002520F9 /* SPBrightnessView.m */; };
+		0919B8BC1FAF1B5B002520F9 /* SPLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A41FAF1B5B002520F9 /* SPLoadingHUD.m */; };
+		0919B8BD1FAF1B5B002520F9 /* SPVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A71FAF1B5B002520F9 /* SPVideoItem.m */; };
+		0919B8BE1FAF1B5B002520F9 /* SPVideoSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8A81FAF1B5B002520F9 /* SPVideoSlider.m */; };
+		0919B8BF1FAF1B5B002520F9 /* SPVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0919B8AB1FAF1B5B002520F9 /* SPVideoPlayer.bundle */; };
+		0919B8C01FAF1B5B002520F9 /* SPNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8AE1FAF1B5B002520F9 /* SPNetworkReachabilityManager.m */; };
+		0919B8C11FAF1B5B002520F9 /* SPVideoCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8B01FAF1B5B002520F9 /* SPVideoCutView.m */; };
+		0919B8C21FAF1B5B002520F9 /* SPVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919B8B11FAF1B5B002520F9 /* SPVideoPlayerControlView.m */; };
 		0921E5B41F70ED1700B491B2 /* SPDownloadConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E5B31F70ED1700B491B2 /* SPDownloadConst.m */; };
 		0921E5B71F70ED6A00B491B2 /* SPDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E5B61F70ED6A00B491B2 /* SPDownloadManager.m */; };
 		0921E5BA1F70EE0500B491B2 /* NSString+SPDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921E5B91F70EE0500B491B2 /* NSString+SPDownload.m */; };
@@ -33,8 +38,6 @@
 		094AE1151F4D3E430059CAC6 /* SPDownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094AE1141F4D3E430059CAC6 /* SPDownLoadViewController.m */; };
 		094AE1181F4D41540059CAC6 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 094AE1171F4D41540059CAC6 /* SPTableViewCell.m */; };
 		094AE1241F4D42B00059CAC6 /* SPVideoResolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 094AE1231F4D42B00059CAC6 /* SPVideoResolution.m */; };
-		094C37E91F31B7EE00FF4D27 /* SPVideoCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 094C37E81F31B7EE00FF4D27 /* SPVideoCutView.m */; };
-		096797A91F56BB1B007A9ED5 /* SPVideoSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 096797A81F56BB1B007A9ED5 /* SPVideoSlider.m */; };
 		0968547A1F5FF3720071C064 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 096854541F5FF3720071C064 /* MKAnnotationView+WebCache.m */; };
 		0968547B1F5FF3720071C064 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 096854561F5FF3720071C064 /* NSData+ImageContentType.m */; };
 		0968547C1F5FF3720071C064 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 096854581F5FF3720071C064 /* NSImage+WebCache.m */; };
@@ -63,9 +66,6 @@
 		09A94C8E1F160EC100E391C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A94C8D1F160EC100E391C0 /* Assets.xcassets */; };
 		09A94C9C1F160EC100E391C0 /* SPVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94C9B1F160EC100E391C0 /* SPVideoPlayerTests.m */; };
 		09A94CA71F160EC100E391C0 /* SPVideoPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CA61F160EC100E391C0 /* SPVideoPlayerUITests.m */; };
-		09A94CD81F1618B100E391C0 /* UIView+CustomControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CCF1F1618B100E391C0 /* UIView+CustomControlView.m */; };
-		09A94CDA1F1618B100E391C0 /* UIWindow+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CD31F1618B100E391C0 /* UIWindow+CurrentViewController.m */; };
-		09A94CDD1F16193400E391C0 /* SPVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A94CDC1F16193400E391C0 /* SPVideoPlayerControlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,30 +92,44 @@
 		09071F571F5AA61900F94C82 /* SPDownLoadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDownLoadModel.m; sourceTree = "<group>"; };
 		09071F591F5AA90500F94C82 /* SPVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoModel.h; sourceTree = "<group>"; };
 		09071F5A1F5AA90500F94C82 /* SPVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoModel.m; sourceTree = "<group>"; };
-		090A13781F3CA3DF00CB62E0 /* SPBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrightnessView.h; sourceTree = "<group>"; };
-		090A13791F3CA3DF00CB62E0 /* SPBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrightnessView.m; sourceTree = "<group>"; };
 		090DB7AB1F5D0B3D002B68DE /* SPProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPProgressView.h; sourceTree = "<group>"; };
 		090DB7AC1F5D0B3D002B68DE /* SPProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPProgressView.m; sourceTree = "<group>"; };
-		090E22D61F41A3100072022D /* SPNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		090E22D71F41A3100072022D /* SPNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		090F28C51F50947500E45D43 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0914213B1F3C05D800946CA7 /* SPLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingHUD.h; sourceTree = "<group>"; };
-		0914213C1F3C05D800946CA7 /* SPLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingHUD.m; sourceTree = "<group>"; };
-		0914EA5A1F58F29500D852B1 /* SPVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoItem.h; sourceTree = "<group>"; };
-		0914EA5B1F58F29500D852B1 /* SPVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoItem.m; sourceTree = "<group>"; };
 		0914EAAD1F5933B900D852B1 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		0914EAAE1F5933B900D852B1 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		091552FC1F53B8390048E3ED /* SPVideoPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPopView.h; sourceTree = "<group>"; };
-		091552FD1F53B8390048E3ED /* SPVideoPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPopView.m; sourceTree = "<group>"; };
-		0915D1EA1F5544A100428592 /* UIViewController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SPPlayerRotation.h"; sourceTree = "<group>"; };
-		0915D1EB1F5544A100428592 /* UIViewController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SPPlayerRotation.m"; sourceTree = "<group>"; };
-		0915D1ED1F5544EA00428592 /* UINavigationController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SPPlayerRotation.h"; sourceTree = "<group>"; };
-		0915D1EE1F5544EA00428592 /* UINavigationController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SPPlayerRotation.m"; sourceTree = "<group>"; };
-		0915D1F01F55452400428592 /* UITabBarController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+SPPlayerRotation.h"; sourceTree = "<group>"; };
-		0915D1F11F55452400428592 /* UITabBarController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+SPPlayerRotation.m"; sourceTree = "<group>"; };
-		0915D1F31F55457300428592 /* UIAlertController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SPPlayerRotation.h"; sourceTree = "<group>"; };
-		0915D1F41F55457300428592 /* UIAlertController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SPPlayerRotation.m"; sourceTree = "<group>"; };
-		0921E5AE1F70BB4400B491B2 /* SPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPVideoPlayer.bundle; sourceTree = "<group>"; };
+		0919B8911FAF1B5B002520F9 /* SPVideoSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoSlider.h; sourceTree = "<group>"; };
+		0919B8921FAF1B5B002520F9 /* SPVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoItem.h; sourceTree = "<group>"; };
+		0919B8941FAF1B5B002520F9 /* UIWindow+CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CurrentViewController.h"; sourceTree = "<group>"; };
+		0919B8951FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+SPPlayerRotation.m"; sourceTree = "<group>"; };
+		0919B8961FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SPPlayerRotation.h"; sourceTree = "<group>"; };
+		0919B8971FAF1B5B002520F9 /* UIView+CustomControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomControlView.h"; sourceTree = "<group>"; };
+		0919B8981FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SPPlayerRotation.h"; sourceTree = "<group>"; };
+		0919B8991FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SPPlayerRotation.h"; sourceTree = "<group>"; };
+		0919B89A1FAF1B5B002520F9 /* UIWindow+CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CurrentViewController.m"; sourceTree = "<group>"; };
+		0919B89B1FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+SPPlayerRotation.h"; sourceTree = "<group>"; };
+		0919B89C1FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SPPlayerRotation.m"; sourceTree = "<group>"; };
+		0919B89D1FAF1B5B002520F9 /* UIView+CustomControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomControlView.m"; sourceTree = "<group>"; };
+		0919B89E1FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SPPlayerRotation.m"; sourceTree = "<group>"; };
+		0919B89F1FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SPPlayerRotation.m"; sourceTree = "<group>"; };
+		0919B8A01FAF1B5B002520F9 /* SPVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerView.m; sourceTree = "<group>"; };
+		0919B8A11FAF1B5B002520F9 /* SPVideoPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPopView.m; sourceTree = "<group>"; };
+		0919B8A21FAF1B5B002520F9 /* SPNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0919B8A31FAF1B5B002520F9 /* SPBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBrightnessView.m; sourceTree = "<group>"; };
+		0919B8A41FAF1B5B002520F9 /* SPLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingHUD.m; sourceTree = "<group>"; };
+		0919B8A51FAF1B5B002520F9 /* SPVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerControlView.h; sourceTree = "<group>"; };
+		0919B8A61FAF1B5B002520F9 /* SPVideoCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoCutView.h; sourceTree = "<group>"; };
+		0919B8A71FAF1B5B002520F9 /* SPVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoItem.m; sourceTree = "<group>"; };
+		0919B8A81FAF1B5B002520F9 /* SPVideoSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoSlider.m; sourceTree = "<group>"; };
+		0919B8A91FAF1B5B002520F9 /* SPVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerView.h; sourceTree = "<group>"; };
+		0919B8AA1FAF1B5B002520F9 /* SPVideoPlayerControlViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerControlViewDelegate.h; sourceTree = "<group>"; };
+		0919B8AB1FAF1B5B002520F9 /* SPVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPVideoPlayer.bundle; sourceTree = "<group>"; };
+		0919B8AC1FAF1B5B002520F9 /* SPLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingHUD.h; sourceTree = "<group>"; };
+		0919B8AD1FAF1B5B002520F9 /* SPBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBrightnessView.h; sourceTree = "<group>"; };
+		0919B8AE1FAF1B5B002520F9 /* SPNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0919B8AF1FAF1B5B002520F9 /* SPVideoPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPopView.h; sourceTree = "<group>"; };
+		0919B8B01FAF1B5B002520F9 /* SPVideoCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoCutView.m; sourceTree = "<group>"; };
+		0919B8B11FAF1B5B002520F9 /* SPVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerControlView.m; sourceTree = "<group>"; };
+		0919B8B21FAF1B5B002520F9 /* SPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayer.h; sourceTree = "<group>"; };
 		0921E5B11F70ECE800B491B2 /* SPDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDownload.h; sourceTree = "<group>"; };
 		0921E5B21F70ED1700B491B2 /* SPDownloadConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDownloadConst.h; sourceTree = "<group>"; };
 		0921E5B31F70ED1700B491B2 /* SPDownloadConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDownloadConst.m; sourceTree = "<group>"; };
@@ -123,7 +137,6 @@
 		0921E5B61F70ED6A00B491B2 /* SPDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDownloadManager.m; sourceTree = "<group>"; };
 		0921E5B81F70EE0500B491B2 /* NSString+SPDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SPDownload.h"; sourceTree = "<group>"; };
 		0921E5B91F70EE0500B491B2 /* NSString+SPDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SPDownload.m"; sourceTree = "<group>"; };
-		094648911F1DD398005C5C7A /* SPVideoPlayerControlViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerControlViewDelegate.h; sourceTree = "<group>"; };
 		094AE0FD1F4D2D2F0059CAC6 /* SPVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoListViewController.h; sourceTree = "<group>"; };
 		094AE0FE1F4D2D2F0059CAC6 /* SPVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoListViewController.m; sourceTree = "<group>"; };
 		094AE1001F4D2D6A0059CAC6 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
@@ -136,10 +149,6 @@
 		094AE1171F4D41540059CAC6 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
 		094AE1221F4D42B00059CAC6 /* SPVideoResolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoResolution.h; sourceTree = "<group>"; };
 		094AE1231F4D42B00059CAC6 /* SPVideoResolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoResolution.m; sourceTree = "<group>"; };
-		094C37E71F31B7EE00FF4D27 /* SPVideoCutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoCutView.h; sourceTree = "<group>"; };
-		094C37E81F31B7EE00FF4D27 /* SPVideoCutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoCutView.m; sourceTree = "<group>"; };
-		096797A71F56BB1B007A9ED5 /* SPVideoSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoSlider.h; sourceTree = "<group>"; };
-		096797A81F56BB1B007A9ED5 /* SPVideoSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoSlider.m; sourceTree = "<group>"; };
 		096854531F5FF3720071C064 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		096854541F5FF3720071C064 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		096854551F5FF3720071C064 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -197,15 +206,6 @@
 		09A94CA21F160EC100E391C0 /* SPVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A94CA61F160EC100E391C0 /* SPVideoPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerUITests.m; sourceTree = "<group>"; };
 		09A94CA81F160EC100E391C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09A94CBB1F16168D00E391C0 /* SPVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerView.h; sourceTree = "<group>"; };
-		09A94CBC1F16168D00E391C0 /* SPVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerView.m; sourceTree = "<group>"; };
-		09A94CC21F16175400E391C0 /* SPVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayer.h; sourceTree = "<group>"; };
-		09A94CCE1F1618B100E391C0 /* UIView+CustomControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomControlView.h"; sourceTree = "<group>"; };
-		09A94CCF1F1618B100E391C0 /* UIView+CustomControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomControlView.m"; sourceTree = "<group>"; };
-		09A94CD21F1618B100E391C0 /* UIWindow+CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+CurrentViewController.h"; sourceTree = "<group>"; };
-		09A94CD31F1618B100E391C0 /* UIWindow+CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+CurrentViewController.m"; sourceTree = "<group>"; };
-		09A94CDB1F16193400E391C0 /* SPVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoPlayerControlView.h; sourceTree = "<group>"; };
-		09A94CDC1F16193400E391C0 /* SPVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoPlayerControlView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +233,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0919B8901FAF1B5B002520F9 /* SPVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0919B8AB1FAF1B5B002520F9 /* SPVideoPlayer.bundle */,
+				0919B8931FAF1B5B002520F9 /* Category */,
+				0919B8B21FAF1B5B002520F9 /* SPVideoPlayer.h */,
+				0919B8A91FAF1B5B002520F9 /* SPVideoPlayerView.h */,
+				0919B8A01FAF1B5B002520F9 /* SPVideoPlayerView.m */,
+				0919B8921FAF1B5B002520F9 /* SPVideoItem.h */,
+				0919B8A71FAF1B5B002520F9 /* SPVideoItem.m */,
+				0919B8AA1FAF1B5B002520F9 /* SPVideoPlayerControlViewDelegate.h */,
+				0919B8A51FAF1B5B002520F9 /* SPVideoPlayerControlView.h */,
+				0919B8B11FAF1B5B002520F9 /* SPVideoPlayerControlView.m */,
+				0919B8AD1FAF1B5B002520F9 /* SPBrightnessView.h */,
+				0919B8A31FAF1B5B002520F9 /* SPBrightnessView.m */,
+				0919B8A61FAF1B5B002520F9 /* SPVideoCutView.h */,
+				0919B8B01FAF1B5B002520F9 /* SPVideoCutView.m */,
+				0919B8AF1FAF1B5B002520F9 /* SPVideoPopView.h */,
+				0919B8A11FAF1B5B002520F9 /* SPVideoPopView.m */,
+				0919B8911FAF1B5B002520F9 /* SPVideoSlider.h */,
+				0919B8A81FAF1B5B002520F9 /* SPVideoSlider.m */,
+				0919B8AC1FAF1B5B002520F9 /* SPLoadingHUD.h */,
+				0919B8A41FAF1B5B002520F9 /* SPLoadingHUD.m */,
+				0919B8A21FAF1B5B002520F9 /* SPNetworkReachabilityManager.h */,
+				0919B8AE1FAF1B5B002520F9 /* SPNetworkReachabilityManager.m */,
+			);
+			path = SPVideoPlayer;
+			sourceTree = "<group>";
+		};
+		0919B8931FAF1B5B002520F9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0919B8981FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.h */,
+				0919B89C1FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.m */,
+				0919B8991FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.h */,
+				0919B89F1FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.m */,
+				0919B89B1FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.h */,
+				0919B8951FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.m */,
+				0919B8961FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.h */,
+				0919B89E1FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.m */,
+				0919B8971FAF1B5B002520F9 /* UIView+CustomControlView.h */,
+				0919B89D1FAF1B5B002520F9 /* UIView+CustomControlView.m */,
+				0919B8941FAF1B5B002520F9 /* UIWindow+CurrentViewController.h */,
+				0919B89A1FAF1B5B002520F9 /* UIWindow+CurrentViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		0921E5B01F70ECC700B491B2 /* SPDownload */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,7 +445,7 @@
 			children = (
 				09A94C841F160EC100E391C0 /* AppDelegate.h */,
 				09A94C851F160EC100E391C0 /* AppDelegate.m */,
-				09A94CB41F160F2E00E391C0 /* SPVideoPlayer */,
+				0919B8901FAF1B5B002520F9 /* SPVideoPlayer */,
 				094AE0FC1F4D2CD90059CAC6 /* 示例1 */,
 				094AE1031F4D3B260059CAC6 /* 示例2 */,
 				09687A831F4FCC1F00FC7947 /* 示例3 */,
@@ -437,54 +485,6 @@
 				09A94CA81F160EC100E391C0 /* Info.plist */,
 			);
 			path = SPVideoPlayerUITests;
-			sourceTree = "<group>";
-		};
-		09A94CB41F160F2E00E391C0 /* SPVideoPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				0921E5AE1F70BB4400B491B2 /* SPVideoPlayer.bundle */,
-				09A94CC51F1618B100E391C0 /* Category */,
-				09A94CC21F16175400E391C0 /* SPVideoPlayer.h */,
-				09A94CBB1F16168D00E391C0 /* SPVideoPlayerView.h */,
-				09A94CBC1F16168D00E391C0 /* SPVideoPlayerView.m */,
-				0914EA5A1F58F29500D852B1 /* SPVideoItem.h */,
-				0914EA5B1F58F29500D852B1 /* SPVideoItem.m */,
-				094648911F1DD398005C5C7A /* SPVideoPlayerControlViewDelegate.h */,
-				09A94CDB1F16193400E391C0 /* SPVideoPlayerControlView.h */,
-				09A94CDC1F16193400E391C0 /* SPVideoPlayerControlView.m */,
-				090A13781F3CA3DF00CB62E0 /* SPBrightnessView.h */,
-				090A13791F3CA3DF00CB62E0 /* SPBrightnessView.m */,
-				094C37E71F31B7EE00FF4D27 /* SPVideoCutView.h */,
-				094C37E81F31B7EE00FF4D27 /* SPVideoCutView.m */,
-				091552FC1F53B8390048E3ED /* SPVideoPopView.h */,
-				091552FD1F53B8390048E3ED /* SPVideoPopView.m */,
-				096797A71F56BB1B007A9ED5 /* SPVideoSlider.h */,
-				096797A81F56BB1B007A9ED5 /* SPVideoSlider.m */,
-				0914213B1F3C05D800946CA7 /* SPLoadingHUD.h */,
-				0914213C1F3C05D800946CA7 /* SPLoadingHUD.m */,
-				090E22D61F41A3100072022D /* SPNetworkReachabilityManager.h */,
-				090E22D71F41A3100072022D /* SPNetworkReachabilityManager.m */,
-			);
-			path = SPVideoPlayer;
-			sourceTree = "<group>";
-		};
-		09A94CC51F1618B100E391C0 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				0915D1EA1F5544A100428592 /* UIViewController+SPPlayerRotation.h */,
-				0915D1EB1F5544A100428592 /* UIViewController+SPPlayerRotation.m */,
-				0915D1ED1F5544EA00428592 /* UINavigationController+SPPlayerRotation.h */,
-				0915D1EE1F5544EA00428592 /* UINavigationController+SPPlayerRotation.m */,
-				0915D1F01F55452400428592 /* UITabBarController+SPPlayerRotation.h */,
-				0915D1F11F55452400428592 /* UITabBarController+SPPlayerRotation.m */,
-				0915D1F31F55457300428592 /* UIAlertController+SPPlayerRotation.h */,
-				0915D1F41F55457300428592 /* UIAlertController+SPPlayerRotation.m */,
-				09A94CCE1F1618B100E391C0 /* UIView+CustomControlView.h */,
-				09A94CCF1F1618B100E391C0 /* UIView+CustomControlView.m */,
-				09A94CD21F1618B100E391C0 /* UIWindow+CurrentViewController.h */,
-				09A94CD31F1618B100E391C0 /* UIWindow+CurrentViewController.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,7 +596,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0921E5AF1F70BB4400B491B2 /* SPVideoPlayer.bundle in Resources */,
+				0919B8BF1FAF1B5B002520F9 /* SPVideoPlayer.bundle in Resources */,
 				09A94C8E1F160EC100E391C0 /* Assets.xcassets in Resources */,
 				090F28C61F50947500E45D43 /* LaunchScreen.storyboard in Resources */,
 				09A94C8C1F160EC100E391C0 /* Main.storyboard in Resources */,
@@ -625,42 +625,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0919B8C01FAF1B5B002520F9 /* SPNetworkReachabilityManager.m in Sources */,
 				096854801F5FF3720071C064 /* SDWebImageDecoder.m in Sources */,
 				096854831F5FF3720071C064 /* SDWebImageManager.m in Sources */,
-				0915D1F61F554C0600428592 /* SPVideoPlayerView.m in Sources */,
 				0921E5BA1F70EE0500B491B2 /* NSString+SPDownload.m in Sources */,
-				0915D1EC1F5544A100428592 /* UIViewController+SPPlayerRotation.m in Sources */,
 				09071F5B1F5AA90500F94C82 /* SPVideoModel.m in Sources */,
-				0914EA5C1F58F29500D852B1 /* SPVideoItem.m in Sources */,
 				094AE0FF1F4D2D2F0059CAC6 /* SPVideoListViewController.m in Sources */,
-				09A94CDD1F16193400E391C0 /* SPVideoPlayerControlView.m in Sources */,
+				0919B8C11FAF1B5B002520F9 /* SPVideoCutView.m in Sources */,
 				09687A8C1F4FCCD100FC7947 /* SPCollectionViewController.m in Sources */,
+				0919B8BA1FAF1B5B002520F9 /* SPVideoPopView.m in Sources */,
 				096854881F5FF3720071C064 /* UIImage+WebP.m in Sources */,
-				0915D1F21F55452400428592 /* UITabBarController+SPPlayerRotation.m in Sources */,
 				09071F331F5A84D900F94C82 /* SPDownLoadingCell.m in Sources */,
+				0919B8B71FAF1B5B002520F9 /* UIAlertController+SPPlayerRotation.m in Sources */,
 				094AE1241F4D42B00059CAC6 /* SPVideoResolution.m in Sources */,
-				09A94CDA1F1618B100E391C0 /* UIWindow+CurrentViewController.m in Sources */,
-				090A137A1F3CA3DF00CB62E0 /* SPBrightnessView.m in Sources */,
 				096854871F5FF3720071C064 /* UIImage+MultiFormat.m in Sources */,
+				0919B8BB1FAF1B5B002520F9 /* SPBrightnessView.m in Sources */,
+				0919B8B81FAF1B5B002520F9 /* UINavigationController+SPPlayerRotation.m in Sources */,
+				0919B8C21FAF1B5B002520F9 /* SPVideoPlayerControlView.m in Sources */,
 				096854891F5FF3720071C064 /* UIImageView+HighlightedWebCache.m in Sources */,
-				090E22D81F41A3100072022D /* SPNetworkReachabilityManager.m in Sources */,
-				0914213D1F3C05D800946CA7 /* SPLoadingHUD.m in Sources */,
 				09A94C861F160EC100E391C0 /* AppDelegate.m in Sources */,
 				096854861F5FF3720071C064 /* UIImage+GIF.m in Sources */,
+				0919B8BD1FAF1B5B002520F9 /* SPVideoItem.m in Sources */,
+				0919B8B31FAF1B5B002520F9 /* UITabBarController+SPPlayerRotation.m in Sources */,
+				0919B8B51FAF1B5B002520F9 /* UIViewController+SPPlayerRotation.m in Sources */,
 				0968547F1F5FF3720071C064 /* SDWebImageCompat.m in Sources */,
 				0968547A1F5FF3720071C064 /* MKAnnotationView+WebCache.m in Sources */,
+				0919B8B41FAF1B5B002520F9 /* UIWindow+CurrentViewController.m in Sources */,
 				09071F581F5AA61900F94C82 /* SPDownLoadModel.m in Sources */,
 				096854821F5FF3720071C064 /* SDWebImageDownloaderOperation.m in Sources */,
 				0921E5B71F70ED6A00B491B2 /* SPDownloadManager.m in Sources */,
+				0919B8BE1FAF1B5B002520F9 /* SPVideoSlider.m in Sources */,
 				094AE1181F4D41540059CAC6 /* SPTableViewCell.m in Sources */,
+				0919B8B91FAF1B5B002520F9 /* SPVideoPlayerView.m in Sources */,
 				0968547B1F5FF3720071C064 /* NSData+ImageContentType.m in Sources */,
-				091552FE1F53B8390048E3ED /* SPVideoPopView.m in Sources */,
+				0919B8BC1FAF1B5B002520F9 /* SPLoadingHUD.m in Sources */,
 				090DB7AD1F5D0B3D002B68DE /* SPProgressView.m in Sources */,
 				0968547E1F5FF3720071C064 /* SDImageCacheConfig.m in Sources */,
 				09687A881F4FCC1F00FC7947 /* SPCollectionViewCell.m in Sources */,
-				094C37E91F31B7EE00FF4D27 /* SPVideoCutView.m in Sources */,
 				094AE1151F4D3E430059CAC6 /* SPDownLoadViewController.m in Sources */,
-				0915D1F51F55457300428592 /* UIAlertController+SPPlayerRotation.m in Sources */,
 				0968548A1F5FF3720071C064 /* UIImageView+WebCache.m in Sources */,
 				094AE1061F4D3B3C0059CAC6 /* SPTableViewController.m in Sources */,
 				0968547C1F5FF3720071C064 /* NSImage+WebCache.m in Sources */,
@@ -668,10 +670,8 @@
 				0968548B1F5FF3720071C064 /* UIView+WebCache.m in Sources */,
 				0968548C1F5FF3720071C064 /* UIView+WebCacheOperation.m in Sources */,
 				0914EAAF1F5933B900D852B1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				09A94CD81F1618B100E391C0 /* UIView+CustomControlView.m in Sources */,
+				0919B8B61FAF1B5B002520F9 /* UIView+CustomControlView.m in Sources */,
 				0968547D1F5FF3720071C064 /* SDImageCache.m in Sources */,
-				096797A91F56BB1B007A9ED5 /* SPVideoSlider.m in Sources */,
-				0915D1EF1F5544EA00428592 /* UINavigationController+SPPlayerRotation.m in Sources */,
 				0921E5B41F70ED1700B491B2 /* SPDownloadConst.m in Sources */,
 				094AE1021F4D2D6A0059CAC6 /* MoviePlayerViewController.m in Sources */,
 				096854851F5FF3720071C064 /* UIButton+WebCache.m in Sources */,

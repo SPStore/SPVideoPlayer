@@ -97,9 +97,8 @@ typedef void(^SPLoadingHUDCompletionBlock)();
 @property (nonatomic, strong) UIColor *labelColor;
 // "菊花"指示器的颜色
 @property (nonatomic, strong) UIColor *indicatorColor;
-// label字体
-@property (nonatomic, strong) UIFont *labelFont;
-
+// label
+@property (nonatomic, strong, readonly) UILabel *textLabel;
 // 调整HUD在垂直方向的位置,默认是居中显示
 @property (nonatomic, assign) CGPoint offset;
 // 内容的四周边距

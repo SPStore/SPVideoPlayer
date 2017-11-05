@@ -33,6 +33,7 @@
 #import "UIViewController+SPPlayerRotation.h"
 #import "UINavigationController+SPPlayerRotation.h"
 #import "UIWindow+CurrentViewController.h"
+#import "UIView+CustomControlView.h"
 #import "SPBrightnessView.h"
 #import "SPVideoPlayerControlViewDelegate.h"
 

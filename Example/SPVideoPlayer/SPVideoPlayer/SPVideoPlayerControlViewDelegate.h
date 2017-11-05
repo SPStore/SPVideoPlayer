@@ -17,6 +17,8 @@
 - (void)sp_controlViePlayOrPauseButtonClicked:(UIButton *)sender;
 /** 下一个视频的按钮事件 */
 - (void)sp_controlViewNextButtonClicked:(UIButton *)sender;
+/** 上一个视频的按钮事件 */
+- (void)sp_controlViewLastButtonClicked:(UIButton *)sender;
 /** 全屏按钮事件 */
 - (void)sp_controlViewFullScreenButtonClicked:(UIButton *)sender;
 /** 切换分辨率按钮事件 */
@@ -29,7 +31,10 @@
 - (void)sp_controlViewSliderTouchEnded:(UISlider *)slider;
 /** slider的单击事件（点击slider播放指定位置） */
 - (void)sp_controlViewSliderTaped:(CGFloat)value;
-
+/** 快进 */
+- (void)sp_controlViewFast_forward;
+/** 快退 */
+- (void)sp_controlViewFast_backward;
 
 /** 返回按钮事件 */
 - (void)sp_controlViewBackButtonClicked:(UIButton *)sender;

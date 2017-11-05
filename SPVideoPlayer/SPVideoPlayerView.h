@@ -26,6 +26,8 @@ UIKIT_EXTERN NSNotificationName const SPVideoPlayerBufferProgressValueChangedNSN
 UIKIT_EXTERN NSNotificationName const SPVideoPlayerCutVideoFinishedNSNotification;
 /** 媒体网络加载状态发生了改变的通知名称 */
 UIKIT_EXTERN NSNotificationName const SPVideoPlayerLoadStatusDidChangedNotification;
+/** 亮度或音量发生了改变的通知名称 */
+UIKIT_EXTERN NSNotificationName const SPVideoPlayerBrightnessOrVolumeDidChangedNotification;
 
 // 播放器的几种状态
 typedef NS_ENUM(NSInteger, SPVideoPlayerPlayState) {

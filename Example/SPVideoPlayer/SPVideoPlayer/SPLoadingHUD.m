@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, SPProgressHUDAnimation) {
 // 充当底部或右边间距的view
 @property (nonatomic, strong) UIView *bottomRightSpacer;
 @property (nonatomic, strong) NSArray *bezelConstraints;
-
+@property (nonatomic, strong) UIFont *labelFont;
 // "菊花"和"label"之间的间距
 @property (nonatomic, assign) CGFloat padding;
 

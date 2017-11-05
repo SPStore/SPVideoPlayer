@@ -800,6 +800,10 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
             [self.bottomView.resolutionBtn setTitle:videoItem.resolutionDic.allKeys[idx] forState:UIControlStateNormal];
         }
     }];
+    
+    if (!videoItem.shouldAutorotate) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+    }
 }
 
 /** 重置ControlView,还原设置 */
@@ -973,7 +977,7 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
 - (UIButton *)repeatBtn {
     if (!_repeatBtn) {
         _repeatBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_repeatBtn setImage:SPPlayerImage(@"play_rePlay_mini_12x12_") forState:UIControlStateNormal];
+        [_repeatBtn setBackgroundImage:SPPlayerImage(@"play_rePlay_mini_12x12_") forState:UIControlStateNormal];
         [_repeatBtn addTarget:self action:@selector(repeatButtonnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _repeatBtn;
@@ -1039,7 +1043,7 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     cutBtnCenter.y = self.center.y;
     self.cutBtn.center = cutBtnCenter;
     
-    self.repeatBtn.frame = CGRectMake(0, 0, 50, 50*3/2.0);
+    self.repeatBtn.frame = CGRectMake(0, 0, 30, 30);
     self.repeatBtn.center = CGPointMake(selfW*0.5, selfH*0.5);
     
     self.bottomProgressView.frame = CGRectMake(0, selfH-2, selfW, 2);
@@ -1070,8 +1074,12 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
         self.topView.frame = CGRectMake(0, 0, selfW, kTopViewH);
         self.bottomView.frame = CGRectMake(0, selfH-60, selfW, kBottomViewH);
         
-        // 200是self.fastView.fastVideoImageView的宽度＋20,高度是self.fastView.fastVideoImageView的高度加上45,45的含义是顶部label的高度25加上label的上下间距(分别为5)加上fastVideoImageView的底部间距10
-        self.fastView.frame = CGRectMake(0, 0, 200, 180*ScreenHeight/ScreenWidth+50);
+        // 200是self.fastView.fastVideoImageView的宽度＋20,高度是self.fastView.fastVideoImageView的高度加上50,50的含义是顶部label的高度25加上label的上下间距(分别为5)加上fastVideoImageView的底部间距10
+        if (self.fastView.fastVideoImageView.image) {
+            self.fastView.frame = CGRectMake(0, 0, 200, 180*ScreenHeight/ScreenWidth+50);
+        } else {
+            self.fastView.frame = CGRectMake(0, 0, 100*selfW/(selfH?selfH:320), 100);
+        }
         self.fastView.center = CGPointMake(selfW*0.5, selfH*0.5);
         
         if (self.isCellVideo) {
@@ -1601,7 +1609,7 @@ static const CGFloat SPPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     CGFloat padding = 10;
     
     UIInterfaceOrientation currentOrientation = [UIApplication sharedApplication].statusBarOrientation;
-    if (currentOrientation == UIDeviceOrientationPortrait) { // 竖屏
+    if (currentOrientation == UIDeviceOrientationPortrait || !self.fastVideoImageView.image) { // 竖屏
         
         self.fastProgressView.hidden = NO;
         self.fastVideoImageView.hidden = YES;

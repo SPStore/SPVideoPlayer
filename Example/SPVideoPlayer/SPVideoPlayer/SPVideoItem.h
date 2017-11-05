@@ -36,5 +36,7 @@
  */
 @property (nonatomic, assign) NSInteger    fatherViewTag;
 
+/** 是否支持旋转 */
+@property (nonatomic, assign) BOOL shouldAutorotate;
 
 @end
