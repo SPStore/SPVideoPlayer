@@ -186,7 +186,6 @@ typedef NS_ENUM(NSInteger, PanDirection){
         self.timeObserve = nil;
     }
     [self.player removeObserver:self forKeyPath:@"rate"];
-    
     [[SPNetworkReachabilityManager sharedManager] stopMonitoring];
 }
 
@@ -379,21 +378,22 @@ typedef NS_ENUM(NSInteger, PanDirection){
         // 主线程
         dispatch_async(dispatch_get_main_queue(), ^{
             // 因为这是异步操作，有可能执行到这儿的时候程序已经退出,必须要确保当前播放进程没有退出
-            if (!_processTerminaed) {
-                [weakSelf prepareToPlayAsset:weakSelf.urlAsset withKey:tracksKey];
-            }
+//            if (!_processTerminaed) {
+                [weakSelf prepareToPlayAssetWithKey:tracksKey];
+//            }
         });
     }];
     
 }
 
 // 播放前准备
-- (void)prepareToPlayAsset:(AVURLAsset *)asset withKey:(NSString *)tracksKey{
+- (void)prepareToPlayAssetWithKey:(NSString *)tracksKey{
     NSError *error;
-    AVKeyValueStatus status = [asset statusOfValueForKey:tracksKey error:&error];
+
+    AVKeyValueStatus status = [self.urlAsset statusOfValueForKey:tracksKey error:&error];
     if (status == AVKeyValueStatusLoaded) {
         // 初始化playerItem,playerItem的setter方法中有监听一系列属性变化，如播放状态
-        self.playerItem = [AVPlayerItem playerItemWithAsset:asset];
+        self.playerItem = [AVPlayerItem playerItemWithAsset:self.urlAsset];
         // 每次都重新创建Player，替换replaceCurrentItemWithPlayerItem:，该方法阻塞线程
         self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
         
@@ -604,8 +604,8 @@ typedef NS_ENUM(NSInteger, PanDirection){
         if (loadedRanges.count > 0 && currentItem.duration.timescale != 0) {
             CGFloat currentTime = CMTimeGetSeconds([currentItem currentTime]);
             // 这个判断是解决当手滑屏幕快进或者使用滑动条快进时，当前秒回弹问题，比如滑到第7秒，然后滑动结束来到此方法时可能当前时间只是6秒，这时会有个回弹现象，不过只有总时间比较小的时候比较明显
-            if (currentTime <= self.dragedSeconds) {
-                currentTime = self.dragedSeconds;
+            if (currentTime <= weakSelf.dragedSeconds) {
+                currentTime = weakSelf.dragedSeconds;
             }
             CGFloat totalTime     = (CGFloat)currentItem.duration.value / currentItem.duration.timescale;
             CGFloat value         = currentTime / totalTime;
@@ -1561,11 +1561,11 @@ typedef NS_ENUM(NSInteger, PanDirection){
         __weak typeof(self) weakSelf = self;
         AVAssetImageGeneratorCompletionHandler handler = ^(CMTime requestedTime, CGImageRef img, CMTime actualTime, AVAssetImageGeneratorResult result, NSError *error){
             if (img) {
-                self.thumbImg = [UIImage imageWithCGImage:img];
+                weakSelf.thumbImg = [UIImage imageWithCGImage:img];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                [weakSelf.controlView sp_playerDraggedWithThumbImage:self.thumbImg];
+                [weakSelf.controlView sp_playerDraggedWithThumbImage:weakSelf.thumbImg];
             });
         };
         [self.imageGenerator generateCGImagesAsynchronouslyForTimes:[NSArray arrayWithObject:[NSValue valueWithCMTime:dragedCMTime]] completionHandler:handler];
@@ -2029,12 +2029,13 @@ typedef NS_ENUM(NSInteger, PanDirection){
                 self.imageGenerator.appliesPreferredTrackTransform = YES;
                 // 最大分辨率,设置之后分会较模糊
                 //self.imageGenerator.maximumSize = CGSizeMake(100, 56);
+                __weak typeof(self) weakSelf = self;
                 AVAssetImageGeneratorCompletionHandler handler = ^(CMTime requestedTime, CGImageRef img, CMTime actualTime, AVAssetImageGeneratorResult result, NSError *error){
                     if (img) {
-                        self.thumbImg = [UIImage imageWithCGImage:img];
+                        weakSelf.thumbImg = [UIImage imageWithCGImage:img];
                     }
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        [self.controlView sp_playerDraggedWithThumbImage:self.thumbImg];
+                        [weakSelf.controlView sp_playerDraggedWithThumbImage:weakSelf.thumbImg];
                     });
                 };
                 [self.imageGenerator generateCGImagesAsynchronouslyForTimes:[NSArray arrayWithObject:[NSValue valueWithCMTime:dragedCMTime]] completionHandler:handler];

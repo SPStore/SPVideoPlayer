@@ -484,7 +484,7 @@ typedef NS_ENUM(NSInteger, SPProgressHUDAnimation) {
         layoutAttributeBottomRight = NSLayoutAttributeBottom;
         layoutAttributeWidthHeight = NSLayoutAttributeHeight;
         
-    } else if (self.activityIndicatorPosition == SPActivityIndicatorPositionLeft) {
+    } else {
         layoutAttributeCenterXY = NSLayoutAttributeCenterY;
         ruleString = @"V:";
         layoutAttributeTopLeft = NSLayoutAttributeLeft;
